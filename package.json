@@ -1,5 +1,5 @@
 {
-  "name": "react-simple-auth",
+  "name": "react-basic-auth",
   "version": "0.0.1",
   "description": "A basic login system",
   "main": "dist/index.js",
