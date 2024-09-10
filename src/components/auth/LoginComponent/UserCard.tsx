@@ -19,7 +19,9 @@ const UserCard: React.FC = () => {
 
   return (
     <div className='card'>
-      <img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png" alt="user" />
+      <div className='profile-img'>
+        <img src="https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png" alt="user" />
+      </div>
       <h3>Hi, {auth?.user?.username}</h3>
       <button onClick={handleLogout}> Logout </button>
     </div>

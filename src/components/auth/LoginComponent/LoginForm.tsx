@@ -28,6 +28,8 @@ const LoginForm: React.FC = () => {
         const tempErrors: Errors = {};
         if (!userData.username) {
             tempErrors.username = 'Username is required';
+        } else if (userData.username.length > 20) {
+          tempErrors.username = 'Username must be short';
         }
         if (!userData.password) {
             tempErrors.password = 'Password is required';

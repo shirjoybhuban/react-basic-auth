@@ -78,13 +78,21 @@
     padding: 40px 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCard 1s ease forwards;
   }
 
   .card h3{
     word-wrap: anywhere;
   }
 
-  .card img{
+  .card .profile-img{
+    width: 185px;
+    height: 185px;
+  }
+
+  .card .profile-img img{
     border-radius: 50%;
   }
 
@@ -103,3 +111,15 @@
   .card button:hover {
     background-color: #9c242e;
   }
+
+  /* Keyframes for the fade-in effect */
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at its normal position */
+  }
+}

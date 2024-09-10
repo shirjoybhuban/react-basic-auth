@@ -16,7 +16,7 @@
 
 <div align="center">
 
-  <sub>Build by <a href="https://twitter.com/timolins">Shirjoy Bhuban</a> 👨‍🍳</sub>
+  <sub>Build by <a href="github.com/shirjoybhuban">Shirjoy Bhuban</a> 👨‍🍳</sub>
 
 </div>
 
