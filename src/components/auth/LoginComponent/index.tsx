@@ -1,17 +1,24 @@
-import React from "react";
-import { AuthProvider } from "../../../context/AuthContext";
+import React, { useContext } from "react";
+import { AuthContext, AuthProvider } from "../../../context/AuthContext";
 import LoginForm from "./LoginForm";
 import UserCard from "./UserCard";
 
-export const LoginComponent : React.FC= () => {
+const LoginComponent : React.FC= () => {
+  const auth = useContext(AuthContext);
+  
   return (
-    <AuthProvider>
-      <div>
-        <LoginForm />
-      </div>
-      <div>
-        <UserCard />
-      </div>
-    </AuthProvider>
+    <div>
+      {
+        !auth?.user &&  
+          <LoginForm />
+      }
+      {
+        auth?.user &&  
+          <UserCard />
+      }
+    </div>
   );
 };
+
+
+export default LoginComponent;
