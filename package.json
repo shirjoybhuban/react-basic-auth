@@ -1,7 +1,7 @@
 {
   "name": "react-basic-auth",
-  "version": "1.0.0",
-  "description": "A basic login system without any third party package dependency",
+  "version": "1.1.0",
+  "description": "A basic login system without any third party package dependency.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,8 +9,14 @@
     "ladle": "ladle serve",
     "build": "tsup"
   },
-  "author": "",
+  "author": "Shirjoy Bhuban",
   "license": "MIT",
+  "repository": "github.com/shirjoybhuban/react-basic-auth",
+  "keywords": [
+    "react",
+    "authentication",
+    "login"
+  ],
   "devDependencies": {
     "@ladle/react": "^1.1.2",
     "@types/react": "^18.3.5",
