@@ -7,7 +7,7 @@ const LoginComponent : React.FC= () => {
   const auth = useContext(AuthContext);
   
   return (
-    <div>
+    <>
       {
         !auth?.user &&  
           <LoginForm />
@@ -16,7 +16,7 @@ const LoginComponent : React.FC= () => {
         auth?.user &&  
           <UserCard />
       }
-    </div>
+    </>
   );
 };
 
