@@ -70,6 +70,7 @@ Add the AuthComponent anywhere to your app. It will automatically take care of u
 ```jsx
 
 import AuthComponent from "rect-basic-auth";
+import 'react-basic-auth/dist/index.css'
 
 
 const MyComponent = () => {

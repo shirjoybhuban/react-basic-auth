@@ -9,7 +9,7 @@
     "ladle": "ladle serve",
     "build": "tsup"
   },
-  "author": "Shirjoy Bhuban",
+  "author": "shirjoy-bhuban",
   "license": "MIT",
   "repository": "github.com/shirjoybhuban/react-basic-auth",
   "keywords": [
